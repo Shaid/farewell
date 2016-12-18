@@ -12,7 +12,7 @@ const initialState = {
   author: {
     name: "Jez Templeton",
     role: "Underutilised Developer",
-    portrait: ""
+    portrait: require('../../static/jez.jpg')
   }
 };
 

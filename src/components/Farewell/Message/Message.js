@@ -6,7 +6,6 @@ import './Message.css';
 const fonts = [
   'indie-flower',
   'gloria-hallelujah',
-  'permanent-maker',
   'reenie-beanie',
   'gochi-hand',
   'crafty-girls'
@@ -22,7 +21,7 @@ export default class Message extends Component {
     const {subject} = this.props;
 
     return (
-      <blockquote className={'container message '}>
+      <blockquote className={'container message ' + sample(fonts)}>
         <div className='message__content'>
           <p>{salutation} {subject},</p>
           <p>{message.start} {message.middle} {message.end}</p>

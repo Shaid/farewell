@@ -6,6 +6,7 @@
 .message {
   flex: 1 1 75%;
   font-size: 3.6rem;
+  line-height: 4rem;
 }
 
 .message__content {
@@ -44,24 +45,23 @@
   flex: 0 0 1rem;
   align-items: center;
   margin: 0 40px;
+
 }
 
 .author__photo img {
-
   border-radius: 50%;
+  max-width: 128px;
 }
 
 .indie-flower {
   font-family: 'Indie Flower', cursive;
+  font-size: 3.1rem;
 }
 
 .gloria-hallelujah {
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 3.3rem;
-}
-
-.permanent-maker {
-font-family: 'Permanent Marker', cursive;
+  font-size: 3.1rem;
+  line-height: 3.5rem;
 }
 
 .reenie-beanie {
@@ -75,5 +75,5 @@ font-family: 'Permanent Marker', cursive;
 
 .crafty-girls {
   font-family: 'Crafty Girls', cursive;
-  font-size: 3.4rem;
+  font-size: 2.8rem;
 }

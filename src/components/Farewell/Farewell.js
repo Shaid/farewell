@@ -21,8 +21,8 @@ import Message from './Message/Message';
           <div className="Message">
             <Message subject={this.props.subject} farewell={this.props.farewell} />
           </div>
-          <footer className="Footer">
-            <a onClick={this.props.actions.generateFarewell}>Another!</a>
+          <footer onClick={this.props.actions.generateFarewell} className="Footer">
+            <a >Another!</a>
           </footer>
         </div>
     );

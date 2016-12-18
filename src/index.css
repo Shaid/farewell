@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Gloria+Hallelujah|Gochi+Hand|Indie+Flower|Permanent+Marker|Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Scope+One|Crafty+Girls|Gloria+Hallelujah|Gochi+Hand|Indie+Flower|Permanent+Marker|Reenie+Beanie');
 
 html {
   font-size: 1rem;;
@@ -13,12 +13,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Scope One", serif;
   background-color: #222;
   color: #ddd;
 }
 
-#root {
+.main {
   display: flex;
   height: 100vh;
+  width: 100vw;
 }

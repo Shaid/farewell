@@ -1,9 +1,17 @@
+.container {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
 .message {
-  font-size: 16rem;
+  flex: 1 1 66%;
+  font-size: 3.6rem;
 }
 
 .author {
-  font-size: 12rem;
+  flex: 1 1 auto;
+  font-size: 3.2rem;
 }
 
 .indie-flower {
@@ -12,6 +20,7 @@
 
 .gloria-hallelujah {
   font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3.3rem;
 }
 
 .permanent-maker {
@@ -20,6 +29,7 @@ font-family: 'Permanent Marker', cursive;
 
 .reenie-beanie {
   font-family: 'Reenie Beanie', cursive;
+  font-size: 3.8rem;
 }
 
 .gochi-hand {
@@ -28,4 +38,5 @@ font-family: 'Permanent Marker', cursive;
 
 .crafty-girls {
   font-family: 'Crafty Girls', cursive;
+  font-size: 3.4rem;
 }

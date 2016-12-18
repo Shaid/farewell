@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Gloria+Hallelujah|Gochi+Hand|Indie+Flower|Permanent+Marker|Reenie+Beanie');
 
+html {
+  font-size: 1rem;;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-color: #222;
   color: #ddd;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
 }

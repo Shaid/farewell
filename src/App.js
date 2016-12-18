@@ -3,11 +3,13 @@ import './App.css';
 
 import Farewell from './components/Farewell/Farewell'
 
+const config = require('../config/config.json');
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Farewell />
+        <Farewell subject={config.subject} />
       </div>
     );
   }

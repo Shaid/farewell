@@ -1,0 +1,13 @@
+.Farewell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Message {
+  flex: 1 1 80%;
+}
+
+.Footer {
+  flex: 1 1 auto;
+}

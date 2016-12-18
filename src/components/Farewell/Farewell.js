@@ -4,19 +4,27 @@ import {bindActionCreators} from 'redux';
 
 import * as farewellActions from '../../actions/farewell';
 
+import './Farewell.css';
+
 import Message from './Message/Message';
 
  class Farewell extends Component {
    static propTypes: {
      actions: PropTypes.object.isRequired,
-     farewell: PropTypes.array.isRequired
-   }
-  render() {
-    return (
-      <div>
-        <Message farewell={this.props.farewell} />
-        <button onClick={this.props.actions.generateFarewell}>Another!</button>
-      </div>
+     farewell: PropTypes.array.isRequired,
+     subject: PropTypes.string.isRequired
+   };
+
+   render() {
+     return (
+        <div className="Farewell">
+          <div className="Message">
+            <Message subject={this.props.subject} farewell={this.props.farewell} />
+          </div>
+          <footer className="Footer">
+            <a onClick={this.props.actions.generateFarewell}>Another!</a>
+          </footer>
+        </div>
     );
   }
 }

@@ -1,17 +1,54 @@
 .container {
-  height: 150px;
   display: flex;
   flex-direction: column;
 }
 
 .message {
-  flex: 1 1 66%;
+  flex: 1 1 75%;
   font-size: 3.6rem;
 }
 
+.message__content {
+  flex: 2 auto;
+}
+
 .author {
-  flex: 1 1 auto;
-  font-size: 3.2rem;
+  flex: 1 auto;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  font-family: "Scope One", serif;
+  margin: auto;
+
+}
+
+.author__label {
+  flex: 2 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.author__name {
+  flex: 1;
+}
+
+.author__role {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.author__photo {
+  flex: 0 0 1rem;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.author__photo img {
+
+  border-radius: 50%;
 }
 
 .indie-flower {

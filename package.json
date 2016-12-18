@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "gender-detection": "0.0.5",
     "lodash": "^4.17.2",
     "react-motion": "^0.4.7",
     "react-redux": "^5.0.1",

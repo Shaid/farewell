@@ -12,7 +12,7 @@ const initialState = {
   author: {
     name: "Jez Templeton",
     role: "Underutilised Developer",
-    portrait: require('../../static/jez.jpg')
+    portrait: require('../../assets/jez.jpg')
   }
 };
 
@@ -39,10 +39,10 @@ function generateMessage() {
 }
 
 function getRandomPortrait(name) {
-  const gender = (detect(name) === "female") ? "women" : "men";
+  const gender = (detect(name) === "female") ? "female" : "male";
 
   const num =  Math.floor(Math.random() * (100 - 1) + 1);
-  return `https://randomuser.me/api/portraits/${gender}/${num}.jpg`;
+  return require(`../../assets/${gender}/${num}.jpg`);
 }
 
 function generateAuthor() {

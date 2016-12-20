@@ -1,5 +1,6 @@
 import { sample, uniq } from 'lodash';
 import { detect } from 'gender-detection';
+
 import * as types from '../actions/types';
 
 const initialState = {
@@ -22,7 +23,7 @@ function generateMessage() {
   const middle = () => {
     let middle = [];
 
-    let x = Math.round(Math.random()*3) + 1;
+    let x = Math.round(Math.random() * 3) + 1;
 
     for (let i = 0; i < x; i++ ){
       middle.push(sample(strings.middle));
@@ -40,8 +41,11 @@ function generateMessage() {
 
 function getRandomPortrait(name) {
   const gender = (detect(name) === "female") ? "female" : "male";
-  const numFemale = 132
+
+  // magic numbers!
+  const numFemale = 132;
   const numMale = 116;
+
   const num =  Math.floor(Math.random() * (gender === "female" ? numFemale : numMale - 1));
   return require(`../../assets/${gender}/${num}.jpg`);
 }

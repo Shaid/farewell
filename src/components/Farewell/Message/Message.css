@@ -1,11 +1,12 @@
 .container {
   display: flex;
   flex-direction: column;
+  margin: 6vw;
 }
 
 .message {
   flex: 1 1 75%;
-  font-size: 3.6rem;
+  font-size: 3.0rem;
   line-height: 4rem;
 }
 
@@ -18,38 +19,37 @@
   font-size: 2.5rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   font-family: "Scope One", serif;
-  margin: auto;
-
 }
 
 .author__label {
   flex: 2 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.1rem;
 }
 
 .author__name {
   flex: 1;
+  font-weight: bold;
 }
 
 .author__role {
   flex: 1;
-  font-size: 1rem;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
 }
 
 .author__photo {
-  flex: 0 0 1rem;
+  flex: 1 auto;
   align-items: center;
-  margin: 0 40px;
-
 }
 
 .author__photo img {
   border-radius: 50%;
+  width: 20vw;
   max-width: 128px;
 }
 
@@ -60,13 +60,14 @@
 
 .gloria-hallelujah {
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 3.1rem;
-  line-height: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 3.4rem;
 }
 
 .reenie-beanie {
   font-family: 'Reenie Beanie', cursive;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
+  line-height: 3.2rem;
 }
 
 .gochi-hand {

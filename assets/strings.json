@@ -22,16 +22,18 @@
         "Sorry to see you go!",
         "Goodbye.",
         "New job time?",
-        "It's so sad you're leaving."
+        "It's so sad you're leaving.",
+        "Well, well!",
+        "Well done!",
+        "Yay!",
+        "Aww yiss, new job."
     ],
     "middle": [
-        "I heard you're leaving!",
-        "Well done on the new job!",
         "(I never know what to write in these things...)",
         "It's been great working with you.",
         "It's been fun.",
         "How could you leave before me!? :(",
-        "Oh, now what will we do?",
+        "Now what will we do?",
         "How can we ever replace you?",
         "What a legend you are!",
         "Now you're leaving all this work for me!? How could you?",
@@ -52,11 +54,13 @@
         "Take me with you!",
         "Enjoy this new chapter in life.",
         "Wishing you the best in this new chapter in life!",
-        "If you think leaving means you'll never hear from me again, you're wrong!"
+        "If you think leaving means you'll never hear from me again, you're wrong!",
+        "Guess they'll find out how irreplacable you are, now!",
+        "I'm going to miss you."
     ],
     "end": [
         "You'll be missed.",
-        "Hey, where's my award!?",
+        "Hey, wait, where's my award!?",
         "Stay in touch!",
         "Hope to catch up soon.",
         "Peace out, dawg!",
@@ -81,7 +85,9 @@
         "Take care.",
         "Wishing you nothing but the best.",
         "*kisses*",
-        "*hugs*"
+        "*hugs*",
+        "Goodbye!",
+        "Farewell!"
     ],
     "firstname": [
         "Roald",
@@ -168,7 +174,6 @@
         "Jack",
         "Jacqueline",
         "James",
-        "Jane",
         "Janet",
         "Janice",
         "Jason",

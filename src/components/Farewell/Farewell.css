@@ -5,6 +5,7 @@
 }
 
 .Message {
+  display: flex;
   flex: 1 1 80%;
 }
 

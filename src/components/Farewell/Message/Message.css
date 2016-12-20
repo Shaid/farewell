@@ -1,17 +1,19 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: 6vw;
 }
 
 .message {
-  flex: 1 1 75%;
-  font-size: 3.0rem;
-  line-height: 4rem;
+  flex: 1 1 auto;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  align-items: center;
+  height: 100%;
 }
 
 .message__content {
-  flex: 2 auto;
+  flex: 2 60%;
+  text-align: left;
 }
 
 .author {
@@ -19,16 +21,17 @@
   font-size: 2.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;;
   font-family: "Scope One", serif;
+  width: 75vw;
+  max-width: 800px;
 }
 
 .author__label {
-  flex: 2 auto;
+  flex: 3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 1.1rem;
 }
 
 .author__name {
@@ -38,19 +41,20 @@
 
 .author__role {
   flex: 1;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
 }
 
 .author__photo {
-  flex: 1 auto;
-  align-items: center;
+  flex: 1;
+  margin: 0 2vw;
 }
 
 .author__photo img {
   border-radius: 50%;
+  box-shadow: 0 0 25px #0a0a0a;
   width: 20vw;
   max-width: 128px;
+  margin: auto 0;
 }
 
 .indie-flower {

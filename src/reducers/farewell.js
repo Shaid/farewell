@@ -5,8 +5,8 @@ import * as types from '../actions/types';
 const initialState = {
   salutation: "Hey",
   message: {
-    start: "Looks like you're finally leaving.",
-    middle: "It turns out that we couldn't fit all the messages into the card, so I made this for you. Click the 'Another!' link to see more of your farewell messages.",
+    start: "Looks like you're leaving.",
+    middle: "Turns out that we couldn't fit all the messages into the card, so I made this for you. Click the 'Another!' link to see more of your farewell messages.",
     end: "Cheers,"
   },
   author: {
@@ -16,13 +16,13 @@ const initialState = {
   }
 };
 
-const strings = require('../../data/strings');
+const strings = require('../../assets/strings');
 
 function generateMessage() {
   const middle = () => {
     let middle = [];
 
-    let x = Math.round(Math.random()*4) + 1;
+    let x = Math.round(Math.random()*3) + 1;
 
     for (let i = 0; i < x; i++ ){
       middle.push(sample(strings.middle));
@@ -40,8 +40,9 @@ function generateMessage() {
 
 function getRandomPortrait(name) {
   const gender = (detect(name) === "female") ? "female" : "male";
-
-  const num =  Math.floor(Math.random() * (100 - 1) + 1);
+  const numFemale = 132
+  const numMale = 116;
+  const num =  Math.floor(Math.random() * (gender === "female" ? numFemale : numMale - 1));
   return require(`../../assets/${gender}/${num}.jpg`);
 }
 

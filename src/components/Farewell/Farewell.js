@@ -16,6 +16,7 @@ import Message from './Message/Message';
    };
 
    render() {
+     console.log(this.props.farewell)
      return (
         <div className="Farewell">
           <div className="Message">

@@ -6,13 +6,13 @@ import * as types from '../actions/types';
 const initialState = {
   salutation: "Hey",
   message: {
-    start: "Looks like you're leaving.",
-    middle: "Turns out that we couldn't fit all the messages into the card, so I made this for you. Click the 'Another!' link to see more of your farewell messages.",
-    end: "Cheers,"
+    start: "It sucks it ended like this. ",
+    middle: "I originally made this when Harry left. Your variant makes much better messages, though. Click the 'Another!' link to see more.",
+    end: "All the best, and cheers,"
   },
   author: {
     name: "Jez Templeton",
-    role: "Underutilised Developer",
+    role: "Underwater Barfighter",
     portrait: require('../../assets/jez.jpg')
   }
 };
@@ -33,7 +33,7 @@ function generateMessage() {
   };
 
   return {
-    start: sample(strings.start),
+    start: '', // sample(strings.start),
     middle: middle(),
     end: sample(strings.end)
   };
@@ -52,21 +52,27 @@ function getRandomPortrait(name) {
 
 function generateAuthor() {
   const name = sample(strings.firstname) + " " + sample(strings.surname);
+
   return {
     name: name,
     role: sample(strings.role),
-    portrait: getRandomPortrait(name)
+    portrait: getRandomPortrait(name),
   };
 }
 
 export default (state = initialState, action) => {
     switch (action.type) {
         case types.FAREWELL_GENERATE:
-            return {
-              ...state,
+            const farewell = {
               salutation: sample(strings.salutations),
               message: generateMessage(),
               author: generateAuthor(),
+            }
+
+            return {
+              ...state,
+              ...farewell,
+              hash: btoa(JSON.stringify(farewell))
             };
         default:
           return state;

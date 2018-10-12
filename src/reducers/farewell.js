@@ -3,11 +3,13 @@ import { detect } from 'gender-detection';
 
 import * as types from '../actions/types';
 
+const MAX_MESSAGE_LENGTH = 160;
+
 const initialState = {
   salutation: "Hey",
   message: {
     start: "It sucks it ended like this. ",
-    middle: "I originally made this when Harry left. Your variant makes much better messages, though. Click the 'Another!' link to see more.",
+    middle: "It's been a pleasure working with you! Thank you for all your support (and for letting me get away with all the rash technology and development decisions). The Bureau will be much diminished by your departure.",
     end: "All the best, and cheers,"
   },
   author: {
@@ -32,9 +34,15 @@ function generateMessage() {
     return uniq(middle).join(" ");
   };
 
+  let middleStr = middle()
+
+  while (middleStr.length > MAX_MESSAGE_LENGTH) {
+     middleStr = middle();
+  }
+  console.log(middleStr.length)
   return {
-    start: '', // sample(strings.start),
-    middle: middle(),
+    start: sample(strings.start),
+    middle: middleStr,
     end: sample(strings.end)
   };
 }

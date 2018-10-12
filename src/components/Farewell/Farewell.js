@@ -23,7 +23,7 @@ import Message from './Message/Message';
             <Message subject={this.props.subject} farewell={this.props.farewell} />
           </div>
           <footer onClick={this.props.actions.generateFarewell} className="Footer">
-            <a >Another!</a>
+            <a>Show me more!</a>
           </footer>
         </div>
     );

@@ -27,7 +27,7 @@ export default class Message extends Component {
       <blockquote className={'container message '/* + sample(fonts)*/}>
         <div className='message__content'>
           <p>{salutation} {subject},</p>
-          <p>{message.start} {message.middle}</p>
+          <p>{message.middle}</p>
           <p>{message.end}</p>
         </div>
         <footer className='author'>
